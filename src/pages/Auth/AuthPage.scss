@@ -2,8 +2,33 @@ main {
    display: grid;
    grid-template-columns: 1fr 1fr;
 
-   #slider img {
-      width: 80%;
+   #slider {
+      background-color: #A9C5BA;
+      height: 100vh;
+      
+      .slide {
+         img {
+            width: 65%;
+            margin: 4rem auto 2rem auto;
+            display: flex;
+         }   
+
+         div {
+            text-align: center;
+            padding: 0rem 6rem;
+            color: white;
+
+            h4 { 
+               font-size: 1.5rem;
+               font-weight: 200;
+               margin-bottom: .8rem;
+            }
+
+            p {
+               font-weight: 200;
+            }
+         }
+      }
    }
 
    #formInputs {
@@ -15,4 +40,20 @@ main {
          font-size: 1.4rem;
       }
    }
+}
+
+.carousel-dots li {
+   margin: 0 .1rem;
+}
+
+.carousel-dots-active {
+   background-color: white;
+   border-radius: 2rem;
+   width: 1.3rem !important;
+   height: .6rem !important;
+   vertical-align: sub;
+
+   button::before, button:hover:before, button:focus:before {
+      opacity: 0 !important;
+  }
 }
