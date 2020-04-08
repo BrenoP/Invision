@@ -1,14 +1,15 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
 import AuthPage from './pages/Auth/AuthPage';
 
 const Routes = () => (
-   <BrowserRouter>
+   <Router>
       <Switch>
-         <Route path="/SingIn" exact component={() => <AuthPage auth="singIn" />} />
-         <Route path="/SingUp" component={() => <AuthPage auth="singUp" />} />
+         <Redirect from="/" exact to="/SignIn" />
+         <Route path="/SignIn" component={() => <AuthPage auth="signIn" />} />
+         <Route path="/SignUp" component={() => <AuthPage auth="signUp" />} />
       </Switch>
-   </ BrowserRouter>
+   </Router>
 );
 
 export default Routes;

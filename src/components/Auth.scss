@@ -1,0 +1,180 @@
+@import 'Variables';
+
+@mixin justify-content {
+   display: flex;
+   justify-content: center;
+}
+
+@mixin button-spacing($padding, $background-color) {
+   background-color: $background-color;
+   border: 0;
+   border-radius: 2rem;
+   padding: .7rem $padding;
+}
+
+main {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+
+   @media(max-width: 768px) {
+      grid-template-columns: 1fr;
+   }
+
+   #slider {
+      background-color: $background;
+      height: 100%;
+
+      @media(max-width: 768px) {
+         padding-bottom: 1rem;
+      }
+      
+      .slide {
+         img {
+            width: 65%;
+            margin: 4rem auto 2rem auto;
+            display: flex;
+
+            @media(max-width: 768px) {
+               width: 60%;
+               margin: 2rem auto 2rem auto;
+            }
+         }   
+
+         div {
+            text-align: center;
+            padding: 0rem 6rem;
+            color: $textLight;
+
+            h4 { 
+               font-size: $deafultFontSize;
+               font-weight: 200;
+               margin-bottom: .8rem;
+            }
+
+            p {
+               font-weight: 200;
+            }
+         }
+      }
+   }
+
+   #formInputs {
+      .title {
+         display: flex;
+         justify-content: flex-end;
+         margin: 3rem 6rem;
+         font-family : 'Avenir Black', sans-serif;
+         font-size: $deafultFontSize;
+      }
+   }
+}
+
+.carousel-dots li {
+   margin: 0 .1rem;
+}
+
+.carousel-dots-active {
+   background-color: $textLight;
+   border-radius: 2rem;
+   width: 1.3rem !important;
+   height: .6rem !important;
+   vertical-align: sub;
+
+   button::before, button:hover:before, button:focus:before {
+      opacity: 0 !important;
+  }
+}
+
+.container {
+   padding: 0 8rem 2rem;
+
+   @media(max-width: 830px) {
+      padding: 0 2rem 2rem;
+   }
+
+   h4 {
+      text-align: center;
+      color: $textGray;
+      font-size: 2rem;
+      font-weight: 300;
+      margin: 3rem 0;
+   }
+
+   .input {
+      margin: .5rem 0;
+   }
+
+   .submit {
+      @include justify-content;
+      margin: 1.8rem 0;
+
+      button {
+         @include button-spacing(3rem,  $textGray);
+         color: $textLight;
+   
+         &:hover {
+            cursor: pointer;
+         }
+      }
+   }
+
+   .forgot {
+      font-size: $smallFontSize;
+      color: $textGray;
+      margin: 1.5rem 0;
+      text-decoration: none;
+      @include justify-content;
+   }
+
+   .division {
+      @include justify-content;
+      align-items: center;
+      margin: 1rem 2rem;
+      opacity: .5;
+
+      span {
+         width: 10rem;
+         height: 1px;
+         background-color: $textGray;
+      }
+
+      div {
+         margin: 0 1rem;
+      }
+   }
+
+   .singIn-google {
+      @include justify-content;
+      margin: 2rem 0;
+
+      button {
+         @include button-spacing(1.5rem, $textLight);
+         font-weight: 600;
+         font-size: $smallFontSize;
+         box-shadow: 0px 3px 6px #00000029;
+         display: flex;
+         align-items: center;
+
+         &:hover {
+            cursor: pointer;
+         }
+
+         img {
+            margin-right: .7rem;
+            width: 13%;
+         }
+      }
+   }
+
+   .new-account {
+      text-align: center;
+      color: $textGray;
+      margin: 2rem 0;
+
+      .sing-up {
+         color: $background;
+         text-decoration-line: underline;
+         text-decoration-color: $background;
+      }
+   }
+}

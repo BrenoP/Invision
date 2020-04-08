@@ -1,6 +1,7 @@
 import React from 'react';
-import './AuthPage.scss';
-import SingIn from './SingIn/SingIn';
+import '../../components/Auth.scss';
+import SignIn from './SignIn/SignIn';
+import SignUp from './SignUp/SignUp';
 import Slider from 'infinite-react-carousel';
 import slides from './Slides';
 
@@ -13,7 +14,6 @@ export default function AuthPage(props) {
                dots
                arrows={false}
                autoplay
-               appendDots={dots => <ul style={{ display: 'block' }}>{dots}</ul>}
             >
             {
                slides.map(slide => (
@@ -30,7 +30,7 @@ export default function AuthPage(props) {
          </section>
          <section id="formInputs">
             <h3 className="title">Invision</h3>
-            { props.auth === 'singIn' ? <SingIn></SingIn> : <></> }
+            { props.auth === 'signIn' ? <SignIn></SignIn> : <SignUp></SignUp> }
          </section>
       </main>
    );
