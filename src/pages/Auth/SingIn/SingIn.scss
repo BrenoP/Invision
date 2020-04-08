@@ -1,0 +1,98 @@
+.container {
+   padding: 0 8rem;
+
+   h4 {
+      text-align: center;
+      color: #707070;
+      font-size: 2rem;
+      font-weight: 300;
+      margin: 3rem 0;
+   }
+
+   .input {
+      margin: .5rem 0;
+   }
+
+   .submit {
+      display: flex;
+      justify-content: center;
+      margin: 1.8rem 0;
+
+      button {
+         background-color: #707070;
+         border: 0;
+         border-radius: 2rem;
+         padding: .7rem 3rem;
+         color: white;
+   
+         &:hover {
+            cursor: pointer;
+         }
+      }
+   }
+
+   .forgot {
+      font-size: .8rem;
+      color: #707070;
+      margin: 1.5rem 0;
+      text-decoration: none;
+      display: flex;
+      justify-content: flex-end;
+   }
+
+   .division {
+      display: flex;
+      align-items: center;
+      margin: 1rem 2rem;
+      opacity: .5;
+
+      span {
+         width: 10rem;
+         height: 1px;
+         background-color: #707070;
+      }
+
+      div {
+         margin: 0 1rem;
+      }
+   }
+
+   .singIn-google {
+      display: flex;
+      justify-content: center;
+      margin: 2rem 0;
+
+      button {
+         background-color: white;
+         border: 0;
+         border-radius: 2rem;
+         padding: .5rem 1.5rem;
+         font-weight: 600;
+         font-size: .9rem;
+         box-shadow: 0px 3px 6px #00000029;
+         display: flex;
+         align-items: center;
+
+         &:hover {
+            cursor: pointer;
+         }
+
+         img {
+            margin-right: .7rem;
+            width: 13%;
+         }
+      }
+   }
+
+   .new-account {
+      text-align: center;
+      color: #707070;
+      margin: 2rem 0;
+
+      .sing-up {
+         color: #A9C5BA;
+         text-decoration-line: underline;
+         text-decoration-color: #A9C5BA;
+      }
+   }
+}
