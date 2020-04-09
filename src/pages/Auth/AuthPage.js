@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../components/Auth.scss';
+import '../../components/styles/Auth.scss';
 import SignIn from './SignIn/SignIn';
 import SignUp from './SignUp/SignUp';
 import Slider from 'infinite-react-carousel';

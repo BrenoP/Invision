@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../components/Auth.scss';
+import '../../../components/styles/Auth.scss';
 import TextField from '@material-ui/core/TextField';
 import iconGoogle from '../../../assets/img/Google.svg';
 import { Link } from 'react-router-dom';
