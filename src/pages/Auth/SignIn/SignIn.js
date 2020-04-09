@@ -8,7 +8,7 @@ import { useForm } from "react-hook-form";
 export default function SignIn() {
    
    const { handleSubmit, register, errors } = useForm();
-   const onSubmit = values => {
+   const onSubmit = () => {
      alert('Logged in')
    };
 
@@ -21,7 +21,7 @@ export default function SignIn() {
    return (
       <div className="container">
          <h4>Welcome to Invision</h4>
-            <form onSubmit={handleSubmit(onSubmit)}>
+            <form onSubmit={ handleSubmit(onSubmit) }>
                <div className="input">
                   <TextField
                      id="standard-error-helper-text"
