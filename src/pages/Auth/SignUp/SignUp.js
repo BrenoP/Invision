@@ -6,10 +6,11 @@ import { Link } from 'react-router-dom'
 import { useForm } from "react-hook-form";
 
 export default function SignUp() {
-
-   const { handleSubmit, register, errors } = useForm();
+   const { handleSubmit, register, errors, reset } = useForm();
+   
    const onSubmit = () => {
-     alert('Sign up')
+     alert('Sign up');
+     reset();
    };
 
    return (

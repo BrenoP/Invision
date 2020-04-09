@@ -6,10 +6,11 @@ import { Link } from 'react-router-dom';
 import { useForm } from "react-hook-form";
 
 export default function SignIn() {
+   const { handleSubmit, register, errors, reset } = useForm();
    
-   const { handleSubmit, register, errors } = useForm();
    const onSubmit = () => {
-     alert('Logged in')
+     alert('Logged in');
+     reset();
    };
 
    const validate = () => {
@@ -28,7 +29,8 @@ export default function SignIn() {
                      name="user"
                      fullWidth 
                      label="Users name or email"
-                     inputRef={register({ 
+                     inputRef={
+                     register({
                         required: '* This field can not be empty',
                      })}
                   />
