@@ -104,6 +104,10 @@ main {
       margin: .5rem 0;
    }
 
+   .error {
+      color: red;
+   }
+
    .submit {
       @include justify-content;
       margin: 1.8rem 0;
@@ -123,7 +127,8 @@ main {
       color: $textGray;
       margin: 1.5rem 0;
       text-decoration: none;
-      @include justify-content;
+      display: flex;
+      justify-content: flex-end;
    }
 
    .division {

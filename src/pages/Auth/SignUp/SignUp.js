@@ -5,7 +5,8 @@ import iconGoogle from '../../../assets/img/Google.svg';
 import { Link } from 'react-router-dom'
 
 export default function SignUp() {
-   return(
+
+   return (
       <div className="container">
          <h4>Getting Started</h4>
          <form noValidate autoComplete="off">
