@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Invision/static/css/main.39fd9c52.chunk.css",
-    "main.js": "/Invision/static/js/main.18851607.chunk.js",
-    "main.js.map": "/Invision/static/js/main.18851607.chunk.js.map",
+    "main.js": "/Invision/static/js/main.c29d2435.chunk.js",
+    "main.js.map": "/Invision/static/js/main.c29d2435.chunk.js.map",
     "runtime-main.js": "/Invision/static/js/runtime-main.19c51b8e.js",
     "runtime-main.js.map": "/Invision/static/js/runtime-main.19c51b8e.js.map",
     "static/css/2.05a0ae32.chunk.css": "/Invision/static/css/2.05a0ae32.chunk.css",
     "static/js/2.2f77c7c8.chunk.js": "/Invision/static/js/2.2f77c7c8.chunk.js",
     "static/js/2.2f77c7c8.chunk.js.map": "/Invision/static/js/2.2f77c7c8.chunk.js.map",
     "index.html": "/Invision/index.html",
-    "precache-manifest.d0d3a5e1f7958df88cc0fa64680eeae7.js": "/Invision/precache-manifest.d0d3a5e1f7958df88cc0fa64680eeae7.js",
+    "precache-manifest.2d96571d064f474fa0ad3df51729dbab.js": "/Invision/precache-manifest.2d96571d064f474fa0ad3df51729dbab.js",
     "service-worker.js": "/Invision/service-worker.js",
     "static/css/2.05a0ae32.chunk.css.map": "/Invision/static/css/2.05a0ae32.chunk.css.map",
     "static/css/main.39fd9c52.chunk.css.map": "/Invision/static/css/main.39fd9c52.chunk.css.map",
@@ -22,6 +22,6 @@
     "static/css/2.05a0ae32.chunk.css",
     "static/js/2.2f77c7c8.chunk.js",
     "static/css/main.39fd9c52.chunk.css",
-    "static/js/main.18851607.chunk.js"
+    "static/js/main.c29d2435.chunk.js"
   ]
 }
